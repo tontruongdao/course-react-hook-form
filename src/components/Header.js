@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Header = () => {
+  const styles = useStyles()
+
   return (
-    <div>
-      
-    </div>
+    <Typography className={styles.root} component='h1'>
+      The Ultimate Form Challenge
+    </Typography>
   )
 }
 
