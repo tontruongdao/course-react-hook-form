@@ -13,10 +13,14 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const MainContainer = ({ children, ...props }) => {
-  const styles 
+  const styles = useStyles
 
   return (
-    <Container component="main" maxWidth="xs" {...props}>
+    <Container 
+      className={styles.root} 
+      component="main" 
+      maxWidth="xs" 
+      {...props}>
       {
         children
       }
